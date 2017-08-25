@@ -71,6 +71,7 @@ namespace AppLayer.AppiumService
 		public static IList<IWebElement> GetComboBoxElements(By by)
 		{
 			var webElem = KeywordImplementation.UIObject(by);
+			var elem = string.Empty;
 			if (webElem.TagName == "select")
 			{
 				SelectElement lvSelectElem = new SelectElement(webElem);
