@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<repository
+name="DesktopWebRepository"
+id="16bf8164-3abe-4034-8f3c-3604f892014f"
+rxversion="6.2">
+  <codegen
+  classname="DesktopWebRepository"
+  namespace="DesktopWeb"/>
+  <rootfolder
+  name="Root"
+  id="0f465d88-dabd-4694-8fe0-65f35f1aa8b6"
+  searchtimeout="30000ms"
+  capname="unknown"
+  isrooted="True"
+  usecache="True">
+    <basepath/>
+  </rootfolder>
+  <variables/>
+</repository>

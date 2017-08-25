@@ -1,0 +1,17 @@
+﻿<Properties>
+  <Array name="bookmarks" />
+  <Array name="files">
+    <Element value="DesktopWeb.rxtst" />
+    <Element value="TC1.rxrec" />
+    <Element value="TC1.UserCode.cs" />
+  </Array>
+  <Properties name="projectSavedData">
+    <Properties name="customTool">
+      <runOnBuild value="False" />
+    </Properties>
+    <Array name="recentusercodeselections">
+      <Element value="DesktopWeb.TC1.ValidateSelectedValue(String pId, String pExpectedCountry)" />
+      <Element value="DesktopWeb.TC1.ClickCountry(String pId, String pExpectedCountry)" />
+    </Array>
+  </Properties>
+</Properties>

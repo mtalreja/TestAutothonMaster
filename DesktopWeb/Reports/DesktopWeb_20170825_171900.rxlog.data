@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="251c9763b60071d"
+		totalerrorcount="0"
+		totalwarningcount="0"
+		totalsuccesscount="1"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		user="Z002XFCE"
+		host="BLRKIET0189PC"
+		rxversion="6.2.1.0"
+		osversion="Windows 7 Service Pack 1 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		language="en-US"
+		screenresolution="1440x900"
+		timestamp="8/25/2017 5:19:00 PM"
+		timestampiso="2017-08-25T11:49:00"
+		timeoutfactor="1">
+		<detail>
+			Ranorex Testscript
+		</detail>
+		<activity
+			result="Success"
+			duration="36.35s"
+			durationms="36354"
+			type="test suite"
+			rid="106cdec9b5454514"
+			totalerrorcount="0"
+			totalwarningcount="0"
+			totalsuccesscount="1"
+			totalfailedcount="0"
+			totalblockedcount="0"
+			testsuitename="DesktopWeb"
+			runconfigname="TestRun"
+			runlabel=""
+			maxchildren="1">
+			<params>
+				<param
+					name="Browser">
+					chrome
+				</param>
+				<param
+					name="Url">
+					http://www.yahoo.com
+				</param>
+			</params>
+			<detail>
+			</detail>
+			<activity
+				result="Success"
+				duration="36.34s"
+				durationms="36337"
+				type="test case"
+				rid="e0cb6a96aef0e3c"
+				totalerrorcount="0"
+				totalwarningcount="0"
+				totalsuccesscount="1"
+				totalfailedcount="0"
+				totalblockedcount="0"
+				testcasename="TestCase"
+				testcaseid="b12c6b1b-06d8-4980-9966-33999f5172bf"
+				maxchildren="0">
+				<params/>
+				<detail>
+				</detail>
+				<activity
+					result="Success"
+					duration="35.67s"
+					durationms="35670"
+					type="test case setup"
+					rid="171fac55449e9bb8"
+					totalerrorcount="0"
+					totalwarningcount="0"
+					totalsuccesscount="0"
+					totalfailedcount="0"
+					totalblockedcount="0">
+					<detail>
+					</detail>
+					<activity
+						result="Success"
+						duration="35.57s"
+						durationms="35574"
+						type="test module"
+						rid="da40aa5ccccf128"
+						totalerrorcount="0"
+						totalwarningcount="0"
+						totalsuccesscount="0"
+						totalfailedcount="0"
+						totalblockedcount="0"
+						modulename="WebSetup (AppLayer)"
+						moduleid="cacd83d8-cecc-4068-890a-24b0ea300888"
+						moduletype="UserCode">
+						<detail>
+						</detail>
+						<varbindings/>
+						<item
+							timeRelativeToTestSuiteStartTime="00:35.874"
+							timeRelativeToTestModuleStartTime="00:35.475"
+							timeWallClock="17:19:36"
+							time="00:35.874"
+							level="Info"
+							category="User">
+							<message>
+								Launch web browserhttp://www.yahoo.com
+							</message>
+							<metainfo
+								codefile="c:\Hackathon\TestAutothon\AppLayer\Logger.cs"
+								codeline="227"
+								loglvl="Info"/>
+						</item>
+					</activity>
+				</activity>
+				<activity
+					result="Success"
+					duration="9ms"
+					durationms="9"
+					type="test module"
+					rid="70d8a802231a018"
+					totalerrorcount="0"
+					totalwarningcount="0"
+					totalsuccesscount="0"
+					totalfailedcount="0"
+					totalblockedcount="0"
+					modulename="TC1"
+					moduleid="8e44af00-4b63-4ce0-b043-aa0d254eaf5a"
+					moduletype="Recording">
+					<detail>
+					</detail>
+					<varbindings/>
+				</activity>
+				<activity
+					result="Success"
+					duration="651ms"
+					durationms="651"
+					type="test case teardown"
+					rid="15d9bd74fb3a66e"
+					totalerrorcount="0"
+					totalwarningcount="0"
+					totalsuccesscount="0"
+					totalfailedcount="0"
+					totalblockedcount="0">
+					<detail>
+					</detail>
+					<activity
+						result="Success"
+						duration="533ms"
+						durationms="533"
+						type="test module"
+						rid="1fb33f1de001b404"
+						totalerrorcount="0"
+						totalwarningcount="0"
+						totalsuccesscount="0"
+						totalfailedcount="0"
+						totalblockedcount="0"
+						modulename="Teardown (AppLayer)"
+						moduleid="1cf765b0-1571-4058-821c-7dc35e94d48a"
+						moduletype="UserCode">
+						<detail>
+						</detail>
+						<varbindings/>
+					</activity>
+				</activity>
+			</activity>
+		</activity>
+	</activity>
+</report>

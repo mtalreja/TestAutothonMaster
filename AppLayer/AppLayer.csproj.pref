@@ -1,0 +1,18 @@
+﻿<Properties>
+  <Array name="active">
+    <Element value="AppiumService\KeywordImplementation.cs" />
+  </Array>
+  <Array name="bookmarks" />
+  <Array name="files">
+    <Element value="AppiumService\WebSpecific.cs" />
+    <Element value="Logger.cs" />
+    <Element value="Modules\WebSetup.cs" />
+    <Element value="AppiumService\KeywordImplementation.cs" />
+  </Array>
+  <Properties name="projectSavedData">
+    <Properties name="customTool">
+      <runOnBuild value="False" />
+    </Properties>
+    <Array name="recentusercodeselections" />
+  </Properties>
+</Properties>

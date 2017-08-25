@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{18D93575-49C4-40C3-B209-26626F85132C}</ProjectGuid>
+    <TargetFrameworkProfile />
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>DesktopWeb</RootNamespace>
+    <AssemblyName>DesktopWeb</AssemblyName>
+    <RanorexVersion>6.2</RanorexVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <RanorexTargetsPath>$(MSBuildExtensionsPath)\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
+    <projectdefaultrepository>076bd06b-dd80-455a-ab63-7d1636bf8d07</projectdefaultrepository>
+    <NoWin32Manifest>False</NoWin32Manifest>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <NoStdLib>False</NoStdLib>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <IntermediateOutputPath>obj\$(Configuration)\</IntermediateOutputPath>
+    <WarningLevel>4</WarningLevel>
+    <StartAction>Project</StartAction>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <BaseAddress>4194304</BaseAddress>
+    <RegisterForComInterop>False</RegisterForComInterop>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <FileAlignment>4096</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <BaseIntermediateOutputPath>obj\</BaseIntermediateOutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="appium-dotnet-driver">
+      <HintPath>..\External\Selenium\appium-dotnet-driver.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Core">
+      <HintPath>..\External\Selenium\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\External\Selenium\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Ranorex.Core" />
+    <Reference Include="Ranorex.Plugin.Cef" />
+    <Reference Include="Ranorex.Plugin.ChromeWeb" />
+    <Reference Include="Ranorex.Plugin.Flex" />
+    <Reference Include="Ranorex.Plugin.Java" />
+    <Reference Include="Ranorex.Plugin.Mobile" />
+    <Reference Include="Ranorex.Plugin.MozillaWeb" />
+    <Reference Include="Ranorex.Plugin.Msaa" />
+    <Reference Include="Ranorex.Plugin.Office" />
+    <Reference Include="Ranorex.Plugin.Qt" />
+    <Reference Include="Ranorex.Plugin.RawText" />
+    <Reference Include="Ranorex.Plugin.Sap" />
+    <Reference Include="Ranorex.Plugin.Uia" />
+    <Reference Include="Ranorex.Plugin.Web" />
+    <Reference Include="Ranorex.Plugin.WebDriver" />
+    <Reference Include="Ranorex.Plugin.Win32" />
+    <Reference Include="Ranorex.Plugin.WinForms" />
+    <Reference Include="Ranorex.Plugin.Wpf" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WebDriver">
+      <HintPath>..\External\Selenium\WebDriver.dll</HintPath>
+    </Reference>
+    <Reference Include="WebDriver.Support">
+      <HintPath>..\External\Selenium\WebDriver.Support.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <id>31fac9d0-b588-48cf-9355-cd233b923826</id>
+    </Compile>
+    <Compile Include="CommonHelper.cs">
+      <id>2eb9bfd4-8686-41af-ace4-130ea9e9046d</id>
+    </Compile>
+    <Compile Include="DesktopWebRepository.cs">
+      <BoundTo>076bd06b-dd80-455a-ab63-7d1636bf8d07</BoundTo>
+      <DependentUpon>DesktopWebRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>df907bee-a57d-4298-8e58-fb513250e8d3</id>
+    </Compile>
+    <Compile Include="Program.cs">
+      <id>ec736d25-a6c6-4bd8-951d-8bb924c3c360</id>
+    </Compile>
+    <Compile Include="TC1.cs">
+      <BoundTo>24561436-0331-4509-b006-c2976f05da6f</BoundTo>
+      <DependentUpon>TC1.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>4c80902f-a9d5-40a4-a955-f903778df9cd</id>
+    </Compile>
+    <Compile Include="TC1.UserCode.cs">
+      <BoundTo>24561436-0331-4509-b006-c2976f05da6f</BoundTo>
+      <DependentUpon>TC1.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>dd58467a-2099-4661-9980-43519b560e4d</id>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <id>77d76b4e-d1c6-4b9e-a9d8-4d5bfc2c1074</id>
+    </None>
+    <None Include="DesktopWebRepository.rximg">
+      <BoundTo>076bd06b-dd80-455a-ab63-7d1636bf8d07</BoundTo>
+      <DependentUpon>DesktopWebRepository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>5c95fbc1-084b-44a7-9992-59aa07e735c2</id>
+    </None>
+    <None Include="DesktopWebRepository.rxrep">
+      <id>076bd06b-dd80-455a-ab63-7d1636bf8d07</id>
+      <repoid>16bf8164-3abe-4034-8f3c-3604f892014f</repoid>
+      <reporootid>0f465d88-dabd-4694-8fe0-65f35f1aa8b6</reporootid>
+    </None>
+    <None Include="TC1.rxrec">
+      <BoundTo>076bd06b-dd80-455a-ab63-7d1636bf8d07</BoundTo>
+      <id>24561436-0331-4509-b006-c2976f05da6f</id>
+      <recordtableid>8e44af00-4b63-4ce0-b043-aa0d254eaf5a</recordtableid>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DesktopWeb.rxtmg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>946c1242-7c9f-4b25-940a-ba0190e04553</id>
+    </Content>
+    <Content Include="DesktopWeb.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>2a0af983-ed73-4ef1-a90e-65cb93721597</id>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AppLayer\AppLayer.csproj">
+      <Project>{FE502DB7-361A-44DD-92C6-26BBC5CE5C48}</Project>
+      <Name>AppLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />
+</Project>

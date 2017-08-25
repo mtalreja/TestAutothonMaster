@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="161092782d236f05"
+		totalerrorcount="1"
+		totalwarningcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="1"
+		totalblockedcount="0"
+		user="Mohit"
+		host="LAPTOP-7SI0S729"
+		rxversion="6.2.1.0"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		language="en-US"
+		screenresolution="1920x1080"
+		timestamp="25-08-2017 19:52:39"
+		timestampiso="2017-08-25T14:22:39"
+		timeoutfactor="1">
+		<detail>
+			Ranorex Testscript
+		</detail>
+		<activity
+			result="Failed"
+			duration="10.42s"
+			durationms="10422"
+			type="test suite"
+			rid="5513c6fa8260342"
+			totalerrorcount="1"
+			totalwarningcount="0"
+			totalsuccesscount="0"
+			totalfailedcount="1"
+			totalblockedcount="0"
+			testsuitename="DesktopWeb"
+			runconfigname="TestRun"
+			runlabel=""
+			maxchildren="1">
+			<params>
+				<param
+					name="Browser">
+					chrome
+				</param>
+				<param
+					name="Url">
+					https://login.yahoo.com/account/create?src=fp&amp;intl=in&amp;lang=en-IN&amp;done=https%3A%2F%2Fmail.yahoo.com&amp;specId=yidReg
+				</param>
+			</params>
+			<detail>
+			</detail>
+			<activity
+				result="Failed"
+				duration="10.41s"
+				durationms="10406"
+				type="test case"
+				rid="24105a80355be9e0"
+				totalerrorcount="1"
+				totalwarningcount="0"
+				totalsuccesscount="0"
+				totalfailedcount="1"
+				totalblockedcount="0"
+				testcasename="TestCase"
+				testcaseid="b12c6b1b-06d8-4980-9966-33999f5172bf"
+				maxchildren="0">
+				<params/>
+				<detail>
+				</detail>
+				<activity
+					result="Success"
+					duration="9.38s"
+					durationms="9381"
+					type="test case setup"
+					rid="20472778e652d8e"
+					totalerrorcount="0"
+					totalwarningcount="0"
+					totalsuccesscount="0"
+					totalfailedcount="0"
+					totalblockedcount="0">
+					<detail>
+					</detail>
+					<activity
+						result="Success"
+						duration="9.29s"
+						durationms="9287"
+						type="test module"
+						rid="1d1525f87bf77c42"
+						totalerrorcount="0"
+						totalwarningcount="0"
+						totalsuccesscount="0"
+						totalfailedcount="0"
+						totalblockedcount="0"
+						modulename="WebSetup (AppLayer)"
+						moduleid="cacd83d8-cecc-4068-890a-24b0ea300888"
+						moduletype="UserCode">
+						<detail>
+						</detail>
+						<varbindings/>
+						<item
+							timeRelativeToTestSuiteStartTime="00:09.520"
+							timeRelativeToTestModuleStartTime="00:09.176"
+							timeWallClock="19:52:48"
+							time="00:09.520"
+							level="Info"
+							category="User">
+							<message>
+								Launch web browserhttps://login.yahoo.com/account/create?src=fp&amp;intl=in&amp;lang=en-IN&amp;done=https%3A%2F%2Fmail.yahoo.com&amp;specId=yidReg
+							</message>
+							<metainfo
+								codefile="d:\Projects\TestAutothon\AppLayer\Logger.cs"
+								codeline="234"
+								loglvl="Info"/>
+						</item>
+					</activity>
+				</activity>
+				<activity
+					result="Failed"
+					duration="541ms"
+					durationms="541"
+					type="test module"
+					rid="1a0560d064629f"
+					totalerrorcount="1"
+					totalwarningcount="0"
+					totalsuccesscount="0"
+					totalfailedcount="0"
+					totalblockedcount="0"
+					modulename="TC1"
+					moduleid="8e44af00-4b63-4ce0-b043-aa0d254eaf5a"
+					moduletype="Recording">
+					<detail>
+					</detail>
+					<errmsg>
+						Unable to cast object of type 'OpenQA.Selenium.Support.UI.SelectElement' to type 'OpenQA.Selenium.IWebElement'.
+					</errmsg>
+					<varbindings/>
+					<item
+						timeRelativeToTestSuiteStartTime="00:10.016"
+						timeRelativeToTestModuleStartTime="00:00.384"
+						timeWallClock="19:52:49"
+						time="00:10.016"
+						level="Error"
+						category="Module"
+						errimg="images_DesktopW_e5fb2dbc\DesktopW_e5fb2dbc_40b501fa_trace.jpg"
+						errthumb="images_DesktopW_e5fb2dbc\DesktopW_e5fb2dbc_40b501fa_trace_thumb.jpg">
+						<message>
+							Unable to cast object of type 'OpenQA.Selenium.Support.UI.SelectElement' to type 'OpenQA.Selenium.IWebElement'.
+						</message>
+						<metainfo
+							stacktrace="   at AppLayer.AppiumService.WebSpecific.GetSelectedComboboxValue(By by, IWebElement&amp; elem) in d:\Projects\TestAutothon\AppLayer\AppiumService\WebSpecific.cs:line 90&#13;&#10;   at DesktopWeb.TC1.ValidateSelectedValue(String pId, String pExpectedCountry) in d:\Projects\TestAutothon\DesktopWeb\TC1.UserCode.cs:line 48&#13;&#10;   at DesktopWeb.TC1.Ranorex.Core.Testing.ITestModule.Run() in d:\Projects\TestAutothon\DesktopWeb\TC1.cs:line 85&#13;&#10;   at Ranorex.Core.Testing.TestModuleLeaf.RunInternal(DataContext parentDataContext)"
+							codefile="d:\Projects\TestAutothon\AppLayer\AppiumService\WebSpecific.cs"
+							codeline="90"
+							loglvl="Error"/>
+					</item>
+				</activity>
+				<activity
+					result="Success"
+					duration="484ms"
+					durationms="484"
+					type="test case teardown"
+					rid="55562798a051090"
+					totalerrorcount="0"
+					totalwarningcount="0"
+					totalsuccesscount="0"
+					totalfailedcount="0"
+					totalblockedcount="0">
+					<detail>
+					</detail>
+					<activity
+						result="Success"
+						duration="312ms"
+						durationms="312"
+						type="test module"
+						rid="1ac2f9ab9deb6c20"
+						totalerrorcount="0"
+						totalwarningcount="0"
+						totalsuccesscount="0"
+						totalfailedcount="0"
+						totalblockedcount="0"
+						modulename="Teardown (AppLayer)"
+						moduleid="1cf765b0-1571-4058-821c-7dc35e94d48a"
+						moduletype="UserCode">
+						<detail>
+						</detail>
+						<varbindings/>
+					</activity>
+				</activity>
+			</activity>
+		</activity>
+	</activity>
+</report>

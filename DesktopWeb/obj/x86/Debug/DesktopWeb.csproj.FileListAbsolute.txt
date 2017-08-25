@@ -1,0 +1,1 @@
+C:\Hackathon\TestAutothon\DesktopWeb\obj\x86\Debug\DesktopWeb.csprojResolveAssemblyReference.cache

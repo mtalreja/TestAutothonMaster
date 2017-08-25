@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="31538d2bc899b84"
+		totalerrorcount="1"
+		totalwarningcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="1"
+		totalblockedcount="0"
+		user="Z002XFCE"
+		host="BLRKIET0189PC"
+		rxversion="6.2.1.0"
+		osversion="Windows 7 Service Pack 1 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		language="en-US"
+		screenresolution="1440x900"
+		timestamp="8/25/2017 5:37:20 PM"
+		timestampiso="2017-08-25T12:07:20"
+		timeoutfactor="1">
+		<detail>
+			Ranorex Testscript
+		</detail>
+		<activity
+			result="Failed"
+			duration="14.56s"
+			durationms="14562"
+			type="test suite"
+			rid="339889a58443514f"
+			totalerrorcount="1"
+			totalwarningcount="0"
+			totalsuccesscount="0"
+			totalfailedcount="1"
+			totalblockedcount="0"
+			testsuitename="DesktopWeb"
+			runconfigname="TestRun"
+			runlabel=""
+			maxchildren="1">
+			<params>
+				<param
+					name="Browser">
+					chrome
+				</param>
+				<param
+					name="Url">
+					https://login.yahoo.com/account/create?src=fp&amp;intl=in&amp;lang=en-IN&amp;done=https%3A%2F%2Fmail.yahoo.com&amp;specId=yidReg
+				</param>
+			</params>
+			<detail>
+			</detail>
+			<activity
+				result="Failed"
+				duration="14.54s"
+				durationms="14542"
+				type="test case"
+				rid="9382065529de673"
+				totalerrorcount="1"
+				totalwarningcount="0"
+				totalsuccesscount="0"
+				totalfailedcount="1"
+				totalblockedcount="0"
+				testcasename="TestCase"
+				testcaseid="b12c6b1b-06d8-4980-9966-33999f5172bf"
+				maxchildren="0">
+				<params/>
+				<detail>
+				</detail>
+				<activity
+					result="Success"
+					duration="11.71s"
+					durationms="11705"
+					type="test case setup"
+					rid="1dbbc2b436c73ec4"
+					totalerrorcount="0"
+					totalwarningcount="0"
+					totalsuccesscount="0"
+					totalfailedcount="0"
+					totalblockedcount="0">
+					<detail>
+					</detail>
+					<activity
+						result="Success"
+						duration="11.61s"
+						durationms="11613"
+						type="test module"
+						rid="ef6501d0168de18"
+						totalerrorcount="0"
+						totalwarningcount="0"
+						totalsuccesscount="0"
+						totalfailedcount="0"
+						totalblockedcount="0"
+						modulename="WebSetup (AppLayer)"
+						moduleid="cacd83d8-cecc-4068-890a-24b0ea300888"
+						moduletype="UserCode">
+						<detail>
+						</detail>
+						<varbindings/>
+						<item
+							timeRelativeToTestSuiteStartTime="00:11.941"
+							timeRelativeToTestModuleStartTime="00:11.533"
+							timeWallClock="17:37:32"
+							time="00:11.941"
+							level="Info"
+							category="User">
+							<message>
+								Launch web browserhttps://login.yahoo.com/account/create?src=fp&amp;intl=in&amp;lang=en-IN&amp;done=https%3A%2F%2Fmail.yahoo.com&amp;specId=yidReg
+							</message>
+							<metainfo
+								codefile="c:\Hackathon\TestAutothon\AppLayer\Logger.cs"
+								codeline="227"
+								loglvl="Info"/>
+						</item>
+					</activity>
+				</activity>
+				<activity
+					result="Failed"
+					duration="2.29s"
+					durationms="2289"
+					type="test module"
+					rid="c98adbc2beb320c"
+					totalerrorcount="1"
+					totalwarningcount="0"
+					totalsuccesscount="0"
+					totalfailedcount="0"
+					totalblockedcount="0"
+					modulename="TC1"
+					moduleid="8e44af00-4b63-4ce0-b043-aa0d254eaf5a"
+					moduletype="Recording">
+					<detail>
+					</detail>
+					<errmsg>
+						Timed out after 2 seconds
+					</errmsg>
+					<varbindings/>
+					<item
+						timeRelativeToTestSuiteStartTime="00:14.204"
+						timeRelativeToTestModuleStartTime="00:02.180"
+						timeWallClock="17:37:34"
+						time="00:14.204"
+						level="Error"
+						category="Module"
+						errimg="images_DesktopW_14f9e95f\DesktopW_14f9e95f_4bdab73c_trace.jpg"
+						errthumb="images_DesktopW_14f9e95f\DesktopW_14f9e95f_4bdab73c_trace_thumb.jpg">
+						<message>
+							Timed out after 2 seconds<br/>no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@name='ernamereg-month']&quot;}
+  (Session info: chrome=60.0.3112.101)
+  (Driver info: chromedriver=2.31.488763 (092de99f48a300323ecf8c2a4e2e7cab51de5ba8),platform=Windows NT 6.1.7601 SP1 x86_64)
+						</message>
+						<metainfo
+							stacktrace="   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)
+   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)
+   at AppLayer.AppiumService.KeywordImplementation.UIObject(By by, TimeSpan timeSpan) in c:\Hackathon\TestAutothon\AppLayer\AppiumService\KeywordImplementation.cs:line 222
+   at AppLayer.AppiumService.KeywordImplementation.UIObject(By by) in c:\Hackathon\TestAutothon\AppLayer\AppiumService\KeywordImplementation.cs:line 214
+   at AppLayer.AppiumService.WebSpecific.SelectComboBoxItem(By by, String pSelectText) in c:\Hackathon\TestAutothon\AppLayer\AppiumService\WebSpecific.cs:line 61
+   at DesktopWeb.TC1.ClickCountry(String pId, String pExpectedCountry) in c:\Hackathon\TestAutothon\DesktopWeb\TC1.UserCode.cs:line 41
+   at DesktopWeb.TC1.Ranorex.Core.Testing.ITestModule.Run() in c:\Hackathon\TestAutothon\DesktopWeb\TC1.cs:line 82
+   at Ranorex.Core.Testing.TestModuleLeaf.RunInternal(DataContext parentDataContext)"
+							codefile="c:\Hackathon\TestAutothon\AppLayer\AppiumService\KeywordImplementation.cs"
+							codeline="222"
+							loglvl="Error"/>
+					</item>
+				</activity>
+				<activity
+					result="Success"
+					duration="543ms"
+					durationms="543"
+					type="test case teardown"
+					rid="6d800290b1e7a54"
+					totalerrorcount="0"
+					totalwarningcount="0"
+					totalsuccesscount="0"
+					totalfailedcount="0"
+					totalblockedcount="0">
+					<detail>
+					</detail>
+					<activity
+						result="Success"
+						duration="490ms"
+						durationms="490"
+						type="test module"
+						rid="19f084396ad92a52"
+						totalerrorcount="0"
+						totalwarningcount="0"
+						totalsuccesscount="0"
+						totalfailedcount="0"
+						totalblockedcount="0"
+						modulename="Teardown (AppLayer)"
+						moduleid="1cf765b0-1571-4058-821c-7dc35e94d48a"
+						moduletype="UserCode">
+						<detail>
+						</detail>
+						<varbindings/>
+					</activity>
+				</activity>
+			</activity>
+		</activity>
+	</activity>
+</report>
