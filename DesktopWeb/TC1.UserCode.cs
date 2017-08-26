@@ -47,6 +47,8 @@ namespace DesktopWeb
         	var lvComboBoxValue = WebSpecific.GetSelectedComboboxValue(By.Id(pId));  //Element Search
         	IWebElement elem = string.Empty;
         	
+        	
+        	
         	if(lvComboBoxValue.Equals(pExpectedCountry,StringComparison.InvariantCultureIgnoreCase))
         	{
         		Logger.logSnapshot(elem);
