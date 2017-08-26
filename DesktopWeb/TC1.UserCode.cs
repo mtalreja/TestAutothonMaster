@@ -48,8 +48,6 @@ namespace DesktopWeb
         	IWebElement elem = string.Empty;
         	
         	
-        	
-        	
         	if(lvComboBoxValue.Equals(pExpectedCountry,StringComparison.InvariantCultureIgnoreCase))
         	{
         		Logger.logSnapshot(elem);
