@@ -91,12 +91,6 @@ namespace AppLayer
 //			Ranorex.Report.LogData(ReportLevel.Info,"",savedImage);
 //		}
 		
-		public static void logSnapshot()
-		{
-			IWebElement elem = null;
-			logSnapshot(elem);
-		}
-		
 		private static Bitmap CropImage(Bitmap source,Rectangle section)
 		{
 			Bitmap bmp=new Bitmap(section.Width,section.Height);
@@ -171,10 +165,9 @@ namespace AppLayer
 			
 		}
 		
-		public static void logSnapshot(IWebElement elem)
+		public static void logSnapshot()
 		{
-			var screenshot = ((ITakesScreenshot)elem).GetScreenshot();
-			screenshot.SaveAsFile(@"D:\TestResults",ImageFormat.Jpeg);
+			logSnapshot(null);
 		}
 		
 		public static void ValidateImagesChanged(Bitmap before,Bitmap after, bool isImageChanged)
