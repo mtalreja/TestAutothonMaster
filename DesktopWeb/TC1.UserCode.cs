@@ -45,6 +45,8 @@ namespace DesktopWeb
         private void ValidateSelectedValue(string pId,string pExpectedCountry)
         {
         	var lvComboBoxValue = WebSpecific.GetSelectedComboboxValue(By.Id(pId));  //Element Search
+        	
+        	
         	if(lvComboBoxValue.Equals(pExpectedCountry,StringComparison.InvariantCultureIgnoreCase))
         	{
         		Logger.logSnapshot();
