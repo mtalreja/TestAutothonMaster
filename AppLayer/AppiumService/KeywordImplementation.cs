@@ -35,7 +35,7 @@ namespace AppLayer.AppiumService
 		public static void ServiceStart()
 		{
 			service = OpenQA.Selenium.Appium.Service.AppiumLocalService.BuildDefaultService();
-			service.Start()
+			service.Start();
 		}
 		
 		public static void LaunchAndroidApp(String udid, String appPackage, String appActivity)
